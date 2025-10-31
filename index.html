@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigneshwaran S - Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "v-MlNSSKFsGt4FWaM",
+        });
+    })();
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <nav class="container">
+            <a href="#" class="logo" onclick="scrollToTop(event)">Vigneshwaran S</a>
+            
+            <!-- Desktop Navigation -->
+            <div class="nav-links">
+                <a href="#about" onclick="scrollToSection(event, 'about')">About</a>
+                <a href="#skills" onclick="scrollToSection(event, 'skills')">Skills</a>
+                <a href="#education" onclick="scrollToSection(event, 'education')">Education</a>
+                <a href="#experience" onclick="scrollToSection(event, 'experience')">Experience</a>
+                <a href="#projects" onclick="scrollToSection(event, 'projects')">Projects</a>
+                <a href="#contact" onclick="scrollToSection(event, 'contact')">Contact</a>
+                 <a href="./Vigneshwaran-Resume.docx" download class="btn-nav-accent" aria-label="Download resume">Resume</a>
+
+                
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#about" onclick="scrollToSection(event, 'about')">About</a>
+            <a href="#skills" onclick="scrollToSection(event, 'skills')">Skills</a>
+            <a href="#education" onclick="scrollToSection(event, 'education')">Education</a>
+            <a href="#experience" onclick="scrollToSection(event, 'experience')">Experience</a>
+            <a href="#projects" onclick="scrollToSection(event, 'projects')">Projects</a>
+            <a href="#contact" onclick="scrollToSection(event, 'contact')">Contact</a>
+            <button class="resume-btn" onclick="downloadResume()">
+                <i class="fas fa-download"></i>
+                Resume
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <!-- <div class="hero-badge">Fresh Graduate</div> -->
+                <h1 class="hero-title">
+                    Hello, I'm <br>
+                    <span class="highlight">Vigneshwaran S</span>
+                </h1>
+                <p class="hero-description">
+                    A passionate web developer ready to create amazing digital experiences and bring innovative ideas to life.
+                </p>
+
+                <div class="social-links">
+                    <a href="https://github.com/vigneshwaranssvm" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/vigneshwaran16" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:vigneshwaranvsm@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+
+                <button class="scroll-btn" onclick="scrollToSection(event, 'about')">
+                    <span>Scroll to explore</span>
+                    <i class="fas fa-arrow-down"></i>
+                </button>
+            </div>
+
+            <div class="hero-image">
+                <div class="image-glow"></div>
+                <img src="vikki.jpg" alt="Profile">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                
+                <h2 class="section-title">About Me</h2>
+            </div>
+
+            <div class="about-content">
+                <p>
+                  I’m Vigneshwaran S, a passionate Web Developer skilled in front-end development, SQL database management, and design tools like Figma and Canva. I focus on creating responsive, user-friendly websites that blend functionality with clean design. I’m deeply interested in exploring modern web technologies and continuously improving my technical and creative skills to deliver impactful digital experiences. I enjoy solving real-world problems through coding, turning ideas into interactive solutions, and ensuring every project reflects both innovation and precision. My goal is to grow as a full-stack developer and contribute to building meaningful, performance-driven web applications.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <!-- <span class="section-label">What I Do</span> -->
+                <h2 class="section-title">Skills</h2>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">HTML</span>
+                        <span class="skill-percentage">98%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 98%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">CSS</span>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 95%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-percentage">40%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 40%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">SQL</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Figma</span>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Canva</span>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Git & GitHub</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Visual Studio Code</span>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 95%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Academic Background</span>
+                <h2 class="section-title">Education</h2>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Bachelor of Computer Applications (BCA) </h3>
+                        <div class="timeline-meta">
+                            <span>SRM Trichy Arts and Science College
+</span>
+                            <span>•</span>
+                            <span>Tiruchirappalli, India</span>
+                            <span>•</span>
+                            <span>2022 - 2025</span>
+                        </div>
+                        <p class="timeline-grade">CGPA: 7.0/10</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Higher Secondary Education</h3>
+                        <div class="timeline-meta">
+                            <span>Arunachala Matric Higher Secondary School</span>
+                            <span>•</span>
+                            <span>Cuddalore, India</span>
+                            <span>•</span>
+                            <span>2021-2022</span>
+                        </div>
+                        <p class="timeline-grade">Percentage: 69%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <!-- <span class="section-label">Work History</span> -->
+                <h2 class="section-title">Experience</h2>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon experience-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Web Development Intern</h3>
+                        <div class="timeline-meta">
+                            <span>CodeBind Technologies</span>
+                            <!-- <span>•</span>
+                            <span>Remote</span> -->
+                            <span>•</span>
+                            <span>June 2024</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li><span>▸</span> Completed a structured internship program focused on frontend web development.</li>
+                            <li><span>▸</span> Developed and maintained responsive web pages using HTML, CSS.</li>
+                            <li><span>▸</span> This internship helped me understand the importance of clean code and user-friendly layouts.</li>
+                            <li><span>▸</span>Through this experience, I improved my problem-solving, debugging, and creative thinking abilities.</li>
+                            <li><span>▸</span> Overall, the internship enhanced my confidence in web development and professional communication.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <!-- <span class="section-label">My Work</span> -->
+                <h2 class="section-title">Projects</h2>
+            </div>
+
+            <div class="projects-list">
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="./project1.jpg" alt="E-Commerce Platform">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Vehicle Breakdown Assistance Management System</h3>
+                        <p class="project-description">
+                                                I developed a Vehicle Breakdown Assistance Management System, a web-based platform that connects users with nearby mechanics during vehicle breakdowns. Built using HTML, CSS, and JavaScript, it offers a responsive interface for submitting requests and tracking real-time updates. The system includes dedicated modules for admins, mechanics, and users to manage services efficiently. Overall, it enhances roadside assistance by improving response time and transparency.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-item reverse">
+                    <div class="project-image">
+                        <img src="./project2.webp" alt="Task Management Application">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">College Connect</h3>
+                        <p class="project-description">
+                           Developed a static and visually engaging website using HTML, CSS to provide essential college-related information, including courses, events, and faculty details. The platform was designed with a responsive layout to ensure smooth navigation across devices, enhancing user experience and accessibility. Focused on creating a clean, structured, and interactive interface that allows students and faculty to stay connected and informed. This project strengthened my skills in frontend development, responsive design, and effective content presentation.
+                        </p>
+                    </div>
+                </div>
+
+                  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Get In Touch</span>
+                <h2 class="section-title">Contact Me</h2>
+                <p class="section-description">
+                    I'm currently looking for new opportunities. Feel free to reach out if you'd like to connect!
+                </p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:vigneshwaranvsm@gmail.com">vigneshwaranvsm@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:+91 6369083580">+91 6369083580</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Your City, Country</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form"   >  <!--onsubmit="handleFormSubmit(event)" -->
+                    <div class="form-row">
+                        <input type="text" name="name" id="name" placeholder="Your Name" required>
+                        <input type="email" name="email" id="email" placeholder="Your Email" required>
+                    </div>
+                        <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                        <textarea name="message" id="message" placeholder="Your Message" rows="6" required></textarea>
+                        <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                         </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; <span id="year"></span> vigneshwaran S. All rights reserved.</p>
+                <div class="footer-socials">
+                    <a href="https://github.com/vigneshwaranssvm" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/vigneshwaran16"  target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:vigneshwaranvsm@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
